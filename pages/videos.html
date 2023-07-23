@@ -15,9 +15,34 @@
 <body>
     <header>
         <h1><a href="../index.html" class="header-title">ATOMIC RIFFS</a></h1>
-        <button class="menu-open" id="open"><i class="bi bi-list"></i></button>
-        <nav class="nav" id="nav">
-            <button class="menu-close" id="close"><i class="bi bi-x"></i></button>
+        <button class="btn btn-primary btn-lg button-burger" type="button"      data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="bi bi-list"></i></button>
+            <div class="offcanvas offcanvas-end text-bg-dark" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <nav class="nav-burger">
+                        <ul>
+                            <li><a href="./music.html">MUSIC</a></li>
+                            <li><a href="./videos.html">VIDEOS</a></li>
+                            <li><a href="./images.html">IMAGES</a></li>
+                            <li><a href="./contact.html">CONTACT</a></li>
+                        </ul>
+                        <div>
+                            <a href="https://www.instagram.com/atomicriffs/" target="_blank"><img src="../img/logo-ig.png"
+                                    alt="Logo Instagram"></a>
+                            <a href="https://www.youtube.com/@AtomicRiffsofficial/" target="_blank"><img src="../img/logo-yt.png"
+                                    alt="Logo Youtube"></a>
+                            <a href="https://atomicriffs.bandcamp.com/" target="_blank"><img src="../img/logo-bc.png"
+                                    alt="Logo Bandcamp"></a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        <nav class="nav">
             <ul>
                 <li><a href="./music.html">MUSIC</a></li>
                 <li><a href="./videos.html">VIDEOS</a></li>
@@ -37,45 +62,37 @@
     <main>
         <section class="videos">
             <h2>WATCH OUT</h2>
-            <div class="d-flex justify-content-center align-content-center mt-5">
-                <div id="carouselExample" class="carousel slide">
+            <div class="d-flex justify-content-center align-items-center flex-column videos-display">
+                <h3>WARNING!</h3>
+                <h3>PLAY IT AT YOUR OWN RISK!</h3>
+                <div id="carouselExample" class="carousel slide clips">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/lhs2p2SeUvs"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
+                                allowfullscreen>
+                            </iframe>
                         </div>
                         <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/bvVe6SkiY4Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                         <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/xkLSRoLvf34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    <button class="carousel-control-prev button-carousel" type="button" data-bs-target="#carouselExample"
                         data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    <button class="carousel-control-next button-carousel" type="button" data-bs-target="#carouselExample"
                         data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
             </div>
-            <!--<div class="clips">
-                <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lhs2p2SeUvs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-                <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bvVe6SkiY4Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-                <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xkLSRoLvf34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-            </div>-->
         </section>
     </main>
     <footer>
