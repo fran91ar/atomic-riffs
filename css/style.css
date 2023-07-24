@@ -427,7 +427,7 @@ header h1 {
 .gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 250px;
+    grid-auto-rows: 350px;
     gap: 10px;
     padding: 30px;
     background-color: rgba(255, 255, 255, 0.361);
@@ -450,8 +450,12 @@ header h1 {
     grid-row: span 2;
 }
 
-.img-11 {
+.img-16 {
     grid-column: span 2;
+}
+
+.img-13 {
+    display: none;
 }
 
 
@@ -589,8 +593,6 @@ footer div div a img:hover {
 
 
 
-
-
 /*----------------------------------MEDIA QUERIES-----------------------------------*/
 
 
@@ -610,12 +612,46 @@ footer div div a img:hover {
 
     .header-title {
         font-size: 45px;
-    }  
+    }
+    
+    
+    /*-----------------------MAIN-----------------------*/
 
+
+    /*--------------MUSIC----------------*/
+
+    
     .albums {
         grid-template-columns: 1fr;
+        grid-auto-rows: 750px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
+
+    .albums div img {
+        width: 600px;
+        height: 600px;
+    }
+
+    .albums div button a {
+        font-size: 25px;
+    }
+
+
+    /*------------IMAGES-------------*/
+
+
+    .images {
+        background-position: top right;
+        background-size: 1120px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 }
+
 
 @media screen and (max-width: 900px) {
 
@@ -660,9 +696,55 @@ footer div div a img:hover {
     /*---------------MUSIC--------------*/
 
 
-    .albums {
-        grid-template-columns: 1fr;
+    .music {
+        padding-top: 60vh;
     }
+
+    .albums {
+        grid-auto-rows: 620px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .albums div img {
+        width: 500px;
+        height: 500px;
+    }
+
+    .albums div button a {
+        font-size: 20px;
+    }
+
+
+    /*--------------VIDEOS------------*/
+    
+
+    .videos {
+        padding-top: 60vh;
+    }
+    
+    .clips {
+        width: 600px;
+        height: 500px;
+    }
+    
+    .carousel-item iframe {
+        width: 600px;
+        height: 400px;
+    }
+
+
+    /*--------------IMAGES-----------*/
+
+
+    .images {
+        padding-top: 60vh;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
 
@@ -720,16 +802,6 @@ footer div div a img:hover {
         font-size: 15px;
     }
 
-    footer div div a img {
-        width: 55px;
-        height: 55px;
-        padding: 10px;
-    }
-
-    footer div div h2 {
-        font-size: 15px;
-    }
-
     .about h2 {
         font-size: 25px;
     }
@@ -741,7 +813,90 @@ footer div div a img:hover {
     .about p {
         font-size: 18px;
     }
+
+    /*------------------MUSIC----------------*/
+
+
+    .music {
+        padding-top: 65vh;
+    }
+
+    .music h2 {
+        font-size: 45px;
+    }
+
+    .albums {
+        grid-auto-rows: 500px;
+    }
+
+    .albums div img {
+        width: 400px;
+        height: 400px;
+    }
+
+
+    /*--------------VIDEOS-------------*/
+
+    
+    .videos {
+        padding-top: 65vh;
+    }
+
+    .videos h2 {
+        font-size: 45px;
+    }
+
+    .videos-display h3 {
+        font-size: 35px;
+    }
+        
+        
+    .clips {
+        width: 450px;
+        height: 350px;
+    }
+        
+    .carousel-item iframe {
+        width: 450px;
+        height: 300px;
+    }
+
+
+    /*--------------IMAGES-----------*/
+
+
+    .images {
+        background-size: 950px;
+        padding-top: 65vh;
+    }
+
+    .images h2 {
+        font-size: 45px;
+    }
+
+
+    /*------------CONTACT-----------*/
+
+    
+    .contact {
+        height: 180vh;
+    }
+
+
+    /*-----------------------FOOTER----------------------*/
+
+    footer div div a img {
+        width: 55px;
+        height: 55px;
+        padding: 10px;
+    }
+
+    footer div div h2 {
+        font-size: 15px;
+    }
+
 }
+
 
 @media screen and (max-width:550px) {
 
@@ -802,6 +957,83 @@ footer div div a img:hover {
     }
 
 
+    /*----------------MUSIC--------------*/
+
+    
+    .music h2 {
+        font-size: 40px;
+    }
+
+    .albums {
+        grid-auto-rows: 420px;
+    }
+
+    .albums div img {
+        width: 330px;
+        height: 330px;
+    }
+
+    .albums div button a {
+        font-size: 16px;
+    }
+
+
+    /*--------------VIDEOS-------------*/
+
+
+    .videos h2 {
+        font-size: 40px;
+    }
+
+    .videos-display h3 {
+        font-size: 25px;
+    }
+        
+        
+    .clips {
+        width: 380px;
+        height: 280px;
+    }
+        
+    .carousel-item iframe {
+        width: 380px;
+        height: 250px;
+    }
+
+
+    /*--------------IMAGES-----------*/
+
+
+    .images {
+        background-size: 800px;
+    }
+
+    .images h2 {
+        font-size: 40px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 450px;
+    }
+
+    .img-16 {
+        display: none;
+    }
+
+    .img-13 {
+        display: contents;
+    }
+
+    /*---------------CONTACT-------------*/
+
+
+    .contact div {
+        margin: 40px;
+    }
+    
+
+
     /*-----------------------FOOTER---------------------*/
 
 
@@ -818,6 +1050,7 @@ footer div div a img:hover {
         height: 40px;
         width: 40px;
     }
+
 }
 
 @media screen and (max-width: 450px) {
@@ -886,6 +1119,83 @@ footer div div a img:hover {
     }
 
 
+    /*--------------MUSIC------------*/
+
+
+    .albums {
+        grid-auto-rows: 380px;
+    }
+
+    .albums div img {
+        width: 280px;
+        height: 280px;
+    }
+
+
+    /*--------------VIDEOS-----------*/
+
+
+    .videos-display h3 {
+        font-size: 20px;
+    }
+        
+        
+    .clips {
+        width: 320px;
+        height: 220px;
+    }
+        
+    .carousel-item iframe {
+        width: 320px;
+        height: 200px;
+    }
+
+
+    /*-------------IMAGES-----------*/
+
+
+    .images {
+        background-image: url(../img/img-1.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .images h2 {
+        font-size: 30px;
+    }
+    
+    .gallery {
+        grid-auto-rows: 350px;
+    }
+
+
+    /*-----------------CONTACT------------*/
+
+
+    .contact {
+        height: 160vh;
+    }
+
+    .contact div {
+        padding: 30px;
+    }
+
+    .contact div h2 {
+        font-size: 20px;
+    }
+    
+    .contact div a img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .contact div form h3 {
+        font-size: 20px;
+    }
+    
+    .contact div h3 {
+        font-size: 20px;
+    }
 
 }
 
@@ -907,5 +1217,113 @@ footer div div a img:hover {
     }
 
 
+    /*------------MUSIC------------*/
 
+
+    .albums {
+        grid-auto-rows: 320px;
+    }
+
+    .albums div img {
+        width: 230px;
+        height: 230px;
+    }
+
+
+    /*--------------VIDEOS-----------*/
+
+
+    .videos-display h3 {
+        font-size: 15px;
+    }
+            
+            
+    .clips {
+        width: 280px;
+        height: 200px;
+    }
+            
+    .carousel-item iframe {
+        width: 280px;
+        height: 180px;
+    }
+
+
+    /*-------------IMAGES-----------*/
+
+
+
+    .gallery {
+        grid-auto-rows: 280px;
+    }
+
+}
+
+
+@media screen and (max-width: 350px) {
+
+
+    /*-----------------------MAIN---------------------*/
+
+
+    /*---------------INDEX---------------*/
+
+    .carousel,
+    .slide {
+        height: 280px;
+        width: 280px;
+    }
+
+
+    /*------------MUSIC------------*/
+
+
+    .music h2 {
+        font-size: 35px;
+    }
+
+    .albums {
+        grid-auto-rows: 320px;
+    }
+
+    .albums div {
+        padding: 10px;
+    }
+
+    .albums div img {
+        width: 230px;
+        height: 230px;
+    }
+
+
+    /*--------------VIDEOS-------------*/
+
+
+    .videos h2 {
+        font-size: 35px;
+    }
+
+    .clips {
+        width: 260px;
+        height: 180px;
+    }
+            
+    .carousel-item iframe {
+        width: 260px;
+        height: 160px;
+    }
+
+
+    /*--------------IMAGES-----------*/
+
+
+    .images h2 {
+        padding: 15px;
+        font-size: 28px;
+    }
+
+    .gallery {
+        grid-auto-rows: 240px;
+    }
+    
 }
