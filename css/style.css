@@ -462,7 +462,6 @@ header h1 {
 /*--------------CONTACT----------*/
 
 .contact {
-    height: 200vh;
     background-image: url(../img/main-2.jpg);
     background-size: cover;
     background-position: center;
@@ -475,6 +474,7 @@ header h1 {
 .contact div {
     background-color: yellow;
     color: black;
+    margin: 80px;
     padding: 50px;
     border-radius: 20px;
     box-shadow: 20px 20px 24px -5px rgba(0, 0, 0, 0.64);
