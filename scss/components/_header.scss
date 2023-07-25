@@ -1,0 +1,98 @@
+// HEADER
+
+header {
+    background-color: black;
+    padding: 2vw 2vw 2vw 2vw;
+    border-bottom: 1px solid yellow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+        margin-bottom: 0;
+        a {
+            .header-title {
+                text-decoration: none;
+                color: yellow;
+                font-size: 50px;
+                font-weight: 900;
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
+    button {
+    }
+    div {
+        div {
+            h5 {
+
+            }
+            button {
+
+            }
+        }
+        div {
+            nav {
+                ul {
+                    li {
+                        a {
+
+                        }
+                    }
+                }
+                div {
+                    a {
+
+                    }
+                }
+            }
+        }
+    }
+    nav {
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 0;
+                padding-left: 0;
+                li {
+                    padding: 10px;
+                    list-style: none;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        font-size: 30px;
+                        font-weight: 900;
+                        &:hover {
+                            color: yellow;
+                        }        
+                    }
+                }
+            }
+            div {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                a {
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        padding: 5px;
+                        &:hover {
+                            filter: 
+                            contrast(40%) 
+                            sepia(1) 
+                            hue-rotate(20deg) 
+                            saturate(1000%)
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
