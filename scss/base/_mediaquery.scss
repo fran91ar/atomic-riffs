@@ -1,0 +1,793 @@
+/*----------------------------------MEDIA QUERIES-----------------------------------*/
+
+
+@media screen and (max-width: 1100px) {
+
+    /*-----------------------GENERALES---------------------*/
+
+    .button-burger {
+        display: block;
+    }
+
+    /*-----------------------HEADER---------------------*/
+
+    header {
+        .nav {
+            display: none;
+        }
+
+        .header-title {
+            font-size: 45px;
+        }
+    }
+
+    /*-----------------------MAIN-----------------------*/
+
+    /*--------------MUSIC----------------*/
+
+    main {
+        .music {
+            .albums {
+                grid-template-columns: 1fr;
+                grid-auto-rows: 750px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+
+                div {
+                    img {
+                        width: 600px;
+                        height: 600px;
+                    }
+
+                    button {
+                        a {
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*------------IMAGES-------------*/
+
+    main .images {
+        background-position: top right;
+        background-size: 1120px;
+
+        .gallery {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    /*-----------------------GENERALES---------------------*/
+
+    .button-burger {
+        font-size: 35px;
+    }
+
+    .carousel,
+    .slide {
+        height: 400px;
+        width: 400px;
+    }
+
+    .clips {
+        width: 600px;
+        height: 500px;
+    }
+
+    .carousel-item iframe {
+        width: 600px;
+        height: 400px;
+    }
+
+    /*-----------------------HEADER---------------------*/
+
+    header h1 .header-title {
+        font-size: 40px;
+    }
+
+    /*-----------------------MAIN-----------------------*/
+
+    /*------------------INDEX---------------*/
+
+    main {
+        .main-index {
+            @include flex (flex, center, center, column);
+            row-gap: 10vw;
+        }
+    }
+
+    main {
+        .news {
+            width: 550px;
+            height: 500px;
+        }
+    }
+
+    /*---------------MUSIC--------------*/
+
+    main {
+        .music {
+            padding-top: 60vh;
+        }
+    }
+
+    main {
+        .music {
+            .albums {
+                grid-auto-rows: 620px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+
+                div {
+                    img {
+                        width: 500px;
+                        height: 500px;
+                    }
+
+                    button {
+                        a {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*--------------VIDEOS------------*/
+
+    main {
+        .videos {
+            padding-top: 60vh;
+        }
+    }
+
+    /*--------------IMAGES-----------*/
+
+    main {
+        .images {
+            padding-top: 60vh;
+
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    /*-----------------------GENERALES---------------------*/
+
+    .button-burger {
+        font-size: 30px;
+    }
+
+    .carousel,
+    .slide {
+        height: 350px;
+        width: 350px;
+    }
+
+    .carousel-caption {
+        padding: 5px;
+
+        h5 {
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 15px;
+        }
+    }
+
+    .clips {
+        width: 450px;
+        height: 350px;
+    }
+
+    .carousel-item iframe {
+        width: 450px;
+        height: 300px;
+    }
+
+    /*-----------------------HEADER---------------------*/
+
+    header {
+        h1 {
+            .header-title {
+                font-size: 35px;
+            }
+        }
+    }
+
+    /*-----------------------MAIN---------------------*/
+
+    /*---------------INDEX---------------*/
+
+    main {
+        .hero {
+            height: 100vw;
+
+            h2 {
+                margin-top: 8vw;
+                font-size: 7vw;
+            }
+        }
+
+        .news {
+            width: 500px;
+            height: 450px;
+        }
+
+        .about {
+            h2 {
+                font-size: 25px;
+            }
+
+            h3 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+
+    /*------------------MUSIC----------------*/
+
+    main {
+        .music {
+            padding-top: 65vh;
+
+            h2 {
+                font-size: 45px;
+            }
+
+            .albums {
+                grid-auto-rows: 500px;
+
+                div {
+                    img {
+                        width: 400px;
+                        height: 400px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*--------------VIDEOS-------------*/
+
+    main {
+        .videos {
+            padding-top: 65vh;
+
+            h2 {
+                font-size: 45px;
+            }
+
+            .videos-display {
+                h3 {
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+
+    /*--------------IMAGES-----------*/
+
+    main {
+        .images {
+            background-size: 950px;
+            padding-top: 65vh;
+
+            h2 {
+                font-size: 45px;
+            }
+        }
+    }
+
+    /*-----------------------FOOTER----------------------*/
+
+    footer {
+        div {
+            div {
+                a {
+                    img {
+                        width: 55px;
+                        height: 55px;
+                        padding: 10px;
+                    }
+                }
+
+                h2 {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:550px) {
+
+    /*-----------------------GENERALES---------------------*/
+
+    .carousel,
+    .slide {
+        height: 300px;
+        width: 300px;
+    }
+
+    .carousel-caption {
+        h5 {
+            padding-top: 10px;
+            font-weight: 700;
+            font-size: 15px;
+        }
+
+        p {
+            padding-bottom: 10px;
+            font-weight: 500;
+            font-size: 10px;
+        }
+    }
+
+    .clips {
+        width: 380px;
+        height: 280px;
+    }
+
+    .carousel-item iframe {
+        width: 380px;
+        height: 250px;
+    }
+
+    /*-----------------------HEADER---------------------*/
+
+    header {
+        h1 {
+            .header-title {
+                font-size: 32px;
+            }
+        }
+    }
+
+    /*-----------------------MAIN---------------------*/
+
+    /*---------------INDEX---------------*/
+
+    main {
+        .hero {
+            height: 110vw;
+
+            h2 {
+                margin-top: 10vw;
+                font-size: 7.5vw;
+            }
+        }
+
+        .news {
+            width: 450px;
+            height: 400px;
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+    }
+
+    /*----------------MUSIC--------------*/
+
+    main {
+        .music {
+            h2 {
+                font-size: 40px;
+            }
+
+            .albums {
+                grid-auto-rows: 420px;
+
+                div {
+                    img {
+                        width: 330px;
+                        height: 330px;
+                    }
+
+                    button {
+                        a {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*--------------VIDEOS-------------*/
+
+    main {
+        .videos {
+            h2 {
+                font-size: 40px;
+            }
+
+            .videos-display {
+                h3 {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
+    /*--------------IMAGES-----------*/
+
+    main {
+        .images {
+            background-size: 800px;
+
+            h2 {
+                font-size: 40px;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(1, 1fr);
+                grid-auto-rows: 450px;
+
+                .img-16 {
+                    display: none;
+                }
+
+                .img-13 {
+                    display: contents;
+                }
+            }
+        }
+    }
+
+    /*---------------CONTACT-------------*/
+
+    main {
+        .contact {
+            div {
+                margin: 40px;
+            }
+        }
+    }
+
+    /*-----------------------FOOTER---------------------*/
+
+    footer {
+        div {
+            flex-direction: column;
+
+            div {
+                flex-direction: row;
+
+                a {
+                    img {
+                        padding: 5px;
+                        height: 40px;
+                        width: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    /*-----------------------GENERALES---------------------*/
+
+    .carousel,
+    .slide {
+        height: 300px;
+        width: 300px;
+    }
+
+    .carousel-caption {
+        h5 {
+            padding-top: 10px;
+            font-weight: 700;
+            font-size: 15px;
+        }
+
+        p {
+            padding-bottom: 10px;
+            font-weight: 500;
+            font-size: 10px;
+        }
+    }
+
+    .clips {
+        width: 320px;
+        height: 220px;
+    }
+
+    .carousel-item iframe {
+        width: 320px;
+        height: 200px;
+    }
+
+    /*-----------------------MAIN---------------------*/
+
+    /*---------------INDEX---------------*/
+
+    main {
+        .hero {
+            height: 120vw;
+
+            h2 {
+                font-size: 9vw;
+                padding: 3vw;
+            }
+        }
+
+        .news {
+            width: 400px;
+            height: 350px;
+            margin-top: 40px;
+
+            h2 {
+                font-size: 15px;
+                margin-bottom: 10px;
+
+                h3 {
+                    font-size: 15px;
+                    margin-top: 10px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
+        .about {
+            h2 {
+                font-size: 15px;
+            }
+
+            h3 {
+                font-size: 14px;
+            }
+
+            p {
+                padding: 10px;
+            }
+        }
+    }
+
+
+    /*--------------MUSIC------------*/
+
+    main {
+        .music {
+            .albums {
+                grid-auto-rows: 380px;
+
+                div {
+                    img {
+                        width: 280px;
+                        height: 280px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*--------------VIDEOS-----------*/
+
+    main {
+        .videos {
+            .videos-display {
+                h3 {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+
+    /*-------------IMAGES-----------*/
+
+    main {
+        .images {
+            background-image: url(../img/img-1.jpg);
+            background-position: center;
+            background-size: cover;
+
+            h2 {
+                font-size: 30px;
+            }
+
+            .gallery {
+                grid-auto-rows: 350px;
+            }
+        }
+    }
+
+    /*-----------------CONTACT------------*/
+
+    main {
+        .contact {
+
+            div {
+                padding: 30px;
+
+                h2 {
+                    font-size: 20px;
+                }
+
+                a {
+                    img {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+
+                form {
+                    h3 {
+                        font-size: 20px;
+                    }
+                }
+
+                h3 {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    /*-----------------------GENERALES---------------------*/
+
+    .clips {
+        width: 280px;
+        height: 200px;
+    }
+
+    .carousel-item iframe {
+        width: 280px;
+        height: 180px;
+    }
+
+    /*-----------------------MAIN---------------------*/
+
+    /*---------------INDEX---------------*/
+
+    main {
+        .news {
+            width: 100%
+        }
+
+        .about {
+            p {
+                font-size: 12px;
+                padding: 8px;
+            }
+        }
+    }
+
+    /*------------MUSIC------------*/
+
+    main {
+        .music {
+            .albums {
+                grid-auto-rows: 320px;
+
+                div {
+                    img {
+                        width: 230px;
+                        height: 230px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*--------------VIDEOS-----------*/
+
+    main {
+        .videos {
+            .videos-display {
+                h3 {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+
+    /*-------------IMAGES-----------*/
+
+    main {
+        .images {
+            .gallery {
+                grid-auto-rows: 280px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    /*-----------------------GENERALES---------------------*/
+
+    .carousel,
+    .slide {
+        height: 280px;
+        width: 280px;
+    }
+
+    .clips {
+        width: 260px;
+        height: 180px;
+    }
+
+    .carousel-item iframe {
+        width: 260px;
+        height: 160px;
+    }
+
+    /*-----------------------MAIN---------------------*/
+
+    /*------------MUSIC------------*/
+
+    main {
+        .music {
+            h2 {
+                font-size: 35px;
+            }
+
+            .albums {
+                grid-auto-rows: 320px;
+
+                div {
+                    padding: 10px;
+
+                    img {
+                        width: 230px;
+                        height: 230px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*--------------VIDEOS-------------*/
+
+    main {
+        .videos {
+            h2 {
+                font-size: 35px;
+            }
+        }
+    }
+
+
+    /*--------------IMAGES-----------*/
+
+    main {
+        .images {
+            h2 {
+                padding: 15px;
+                font-size: 28px;
+            }
+
+            .gallery {
+                grid-auto-rows: 240px;
+            }
+        }
+    }
+}

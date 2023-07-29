@@ -7,60 +7,351 @@
 
 /*---------------------------BODY----------------------------*/
 body {
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden; }
 
+/*---------------------------GENERALES----------------------------*/
+.button-burger {
+  background-color: transparent;
+  border: 0;
+  display: none;
+  font-size: 40px; }
+  .button-burger:hover {
+    background-color: transparent; }
+
+.carousel,
+.slide {
+  height: 500px;
+  width: 500px; }
+
+.carousel-caption {
+  background-color: white; }
+  .carousel-caption h5 {
+    color: black;
+    font-weight: 900; }
+  .carousel-caption p {
+    color: black;
+    font-weight: 700;
+    margin-bottom: 0; }
+
+.clips {
+  width: 800px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.carousel-item iframe {
+  width: 800px;
+  height: 500px; }
+
+.button-carousel {
+  bottom: auto;
+  top: auto; }
+
+.form-label {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 900; }
+
+.btn-close-newsletter {
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  -moz-filter: invert(100%); }
+
+main .music h2, main .videos h2, main .images h2, main .music .albums div img:hover, main .images .gallery div img:hover, main .hero h2, main .about, main .contact div {
+  box-shadow: 20px 20px 24px -5px rgba(0, 0, 0, 0.64);
+  -webkit-box-shadow: 20px 20px 24px -5px rgba(0, 0, 0, 0.64);
+  -moz-box-shadow: 20px 20px 24px -5px rgba(0, 0, 0, 0.64); }
+
+main .music, main .videos, main .images {
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 56.5vh;
+  padding-bottom: 10px; }
+
+main .music h2, main .videos h2, main .images h2 {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: 900;
+  font-size: 50px;
+  color: black;
+  background-color: yellow;
+  padding: 20px; }
+
+header div .nav-burger div a img:hover, header .nav div a img:hover, footer div div a img:hover {
+  filter: contrast(40%) sepia(1) hue-rotate(20deg) saturate(1000%); }
+
+main .music .albums div img:hover, main .images .gallery div img:hover {
+  transform: scale(1.05);
+  border-radius: 20px; }
+
+/*---------------------------HEADER----------------------------*/
 header {
   background-color: black;
   padding: 2vw 2vw 2vw 2vw;
   border-bottom: 1px solid yellow;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  flex-direction: row; }
   header h1 {
     margin-bottom: 0; }
-    header h1 a .header-title {
+    header h1 .header-title {
       text-decoration: none;
       color: yellow;
       font-size: 50px;
-      font-weight: 900; }
-      header h1 a .header-title:hover {
+      font-weight: 900;
+      transition: color 0.5s; }
+      header h1 .header-title:hover {
         color: white; }
-  header nav .nav {
+  header div .nav-burger {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column; }
+    header div .nav-burger ul li {
+      padding: 10px;
+      list-style: none; }
+      header div .nav-burger ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+        font-weight: 900;
+        transition: color 0.5s; }
+        header div .nav-burger ul li a:hover {
+          color: yellow; }
+    header div .nav-burger div {
+      padding-left: 30px; }
+      header div .nav-burger div a img {
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+        transition: filter 0.5s; }
+  header .nav {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
-    header nav .nav ul {
+    align-items: center;
+    flex-direction: row; }
+    header .nav ul {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-direction: row;
       margin-bottom: 0;
       padding-left: 0; }
-      header nav .nav ul li {
+      header .nav ul li {
         padding: 10px;
         list-style: none; }
-        header nav .nav ul li a {
+        header .nav ul li a {
           text-decoration: none;
           color: white;
           font-size: 30px;
-          font-weight: 900; }
-          header nav .nav ul li a:hover {
+          font-weight: 900;
+          transition: color 0.5s; }
+          header .nav ul li a:hover {
             color: yellow; }
-    header nav .nav div {
+    header .nav div {
       display: flex;
       justify-content: space-around;
-      align-items: center; }
-      header nav .nav div a img {
+      align-items: center;
+      flex-direction: row; }
+      header .nav div a img {
         width: 50px;
         height: 50px;
-        padding: 5px; }
-        header nav .nav div a img:hover {
-          filter: contrast(40%) sepia(1) hue-rotate(20deg) saturate(1000%); }
+        padding: 5px;
+        transition: filter 0.5s; }
 
+/*---------------------------MAIN----------------------------*/
+/*------------------INDEX---------------*/
+main .hero {
+  height: 80vw;
+  background-image: url(../img/main-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top; }
+  main .hero h2 {
+    display: inline-block;
+    color: black;
+    background-color: yellow;
+    padding: 2vw;
+    margin-top: 5vw;
+    margin-bottom: 0;
+    font-weight: 900;
+    font-size: 6vw; }
+
+main .main-index {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 80px;
+  background-image: url(../img/main-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+main .news {
+  grid-column: 3/6;
+  grid-row: 1/2;
+  margin-top: 50px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: yellow;
+  color: black;
+  box-shadow: -20px 20px 24px -5px rgba(0, 0, 0, 0.64);
+  -webkit-box-shadow: -20px 20px 24px -5px rgba(0, 0, 0, 0.64);
+  -moz-box-shadow: -20px 20px 24px -5px rgba(0, 0, 0, 0.64); }
+  main .news h2 {
+    text-decoration: underline;
+    font-weight: 900;
+    margin-bottom: 20px; }
+
+main .about {
+  grid-column: 1/4;
+  grid-row: 2/3;
+  margin-bottom: 50px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: yellow;
+  color: black; }
+  main .about h2 {
+    text-decoration: underline;
+    font-weight: 900;
+    margin-bottom: 0; }
+  main .about h3 {
+    margin-top: 20px;
+    font-weight: 900; }
+  main .about p {
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 0; }
+
+/*------------------MUSIC---------------*/
+main .music {
+  background-image: url(../img/main-4.jpg); }
+  main .music .albums {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 600px;
+    row-gap: 20px;
+    background-color: rgba(255, 255, 255, 0.361);
+    margin: 20px; }
+    main .music .albums div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: transparent;
+      padding: 40px; }
+      main .music .albums div img {
+        width: 450px;
+        height: 450px;
+        transition: 1s; }
+      main .music .albums div button a {
+        text-decoration: none;
+        color: white;
+        list-style: none;
+        font-weight: 500;
+        font-size: 18px; }
+
+/*------------------VIDEOS---------------*/
+main .videos {
+  background-image: url(../img/main-5.jpeg); }
+  main .videos .videos-display {
+    background-color: rgba(255, 255, 255, 0.361);
+    margin: 20px;
+    padding: 40px 0 40px 0; }
+    main .videos .videos-display h3 {
+      background-color: yellow;
+      padding: 2px;
+      font-weight: 700;
+      font-size: 40px;
+      animation: blink-animation 1s steps(5, start) infinite;
+      -webkit-animation: blink-animation 1s steps(5, start) infinite; }
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden; } }
+
+/*------------------IMAGES---------------*/
+main .images {
+  background-image: url(../img/main-3.jpg); }
+  main .images .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 350px;
+    gap: 20px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.361);
+    margin: 20px; }
+    main .images .gallery div img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      transition: 1s; }
+    main .images .gallery .img-1 {
+      grid-row: span 2; }
+    main .images .gallery .img-16 {
+      grid-column: span 2; }
+    main .images .gallery .img-13 {
+      display: none; }
+
+/*------------------CONTACT---------------*/
+main .contact {
+  background-image: url(../img/main-2.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  main .contact div {
+    background-color: yellow;
+    color: black;
+    margin: 80px;
+    padding: 50px;
+    border-radius: 20px; }
+    main .contact div h2 {
+      margin-bottom: 10px;
+      text-decoration: underline; }
+    main .contact div form section {
+      margin-bottom: 10px; }
+    main .contact div form h3 {
+      font-size: 1.5em;
+      text-decoration: underline;
+      margin-top: 30px;
+      margin-bottom: 10px; }
+    main .contact div h3 {
+      font-size: 1.5em;
+      text-decoration: underline;
+      margin-top: 30px;
+      margin-bottom: 20px; }
+    main .contact div a img {
+      width: 60px;
+      height: 60px;
+      margin-right: 5px;
+      filter: invert(100%);
+      -webkit-filter: invert(100%);
+      -moz-filter: invert(100%); }
+
+/*---------------------------FOOTER----------------------------*/
 footer {
   background-color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
   padding: 30px;
   border-top: 1px solid yellow; }
   footer nav ul {
@@ -71,10 +362,392 @@ footer {
     line-height: 1; }
     footer nav ul li a {
       color: white;
-      text-decoration: none; }
+      text-decoration: none;
+      transition: color 0.5s; }
       footer nav ul li a:hover {
         color: yellow; }
   footer div {
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    flex-direction: row; }
+    footer div div a img {
+      width: 70px;
+      height: 70px;
+      padding: 10px;
+      transition: filter 0.5s; }
+    footer div div h2 {
+      text-decoration: none;
+      color: white;
+      padding: 10px;
+      font-size: 20px;
+      margin: 10px;
+      border: 3px solid white;
+      font-weight: 600;
+      transition: color 0.5s;
+      transition: border 0.1s; }
+      footer div div h2:hover {
+        color: yellow;
+        border: 3px solid yellow;
+        cursor: pointer; }
+
+/*----------------------------------MEDIA QUERIES-----------------------------------*/
+@media screen and (max-width: 1100px) {
+  /*-----------------------GENERALES---------------------*/
+  .button-burger {
+    display: block; }
+  /*-----------------------HEADER---------------------*/
+  header .nav {
+    display: none; }
+  header .header-title {
+    font-size: 45px; }
+  /*-----------------------MAIN-----------------------*/
+  /*--------------MUSIC----------------*/
+  main .music .albums {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 750px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    main .music .albums div img {
+      width: 600px;
+      height: 600px; }
+    main .music .albums div button a {
+      font-size: 25px; }
+  /*------------IMAGES-------------*/
+  main .images {
+    background-position: top right;
+    background-size: 1120px; }
+    main .images .gallery {
+      grid-template-columns: repeat(3, 1fr); } }
+
+@media screen and (max-width: 900px) {
+  /*-----------------------GENERALES---------------------*/
+  .button-burger {
+    font-size: 35px; }
+  .carousel,
+  .slide {
+    height: 400px;
+    width: 400px; }
+  .clips {
+    width: 600px;
+    height: 500px; }
+  .carousel-item iframe {
+    width: 600px;
+    height: 400px; }
+  /*-----------------------HEADER---------------------*/
+  header h1 .header-title {
+    font-size: 40px; }
+  /*-----------------------MAIN-----------------------*/
+  /*------------------INDEX---------------*/
+  main .main-index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10vw; }
+  main .news {
+    width: 550px;
+    height: 500px; }
+  /*---------------MUSIC--------------*/
+  main .music {
+    padding-top: 60vh; }
+  main .music .albums {
+    grid-auto-rows: 620px;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    main .music .albums div img {
+      width: 500px;
+      height: 500px; }
+    main .music .albums div button a {
+      font-size: 20px; }
+  /*--------------VIDEOS------------*/
+  main .videos {
+    padding-top: 60vh; }
+  /*--------------IMAGES-----------*/
+  main .images {
+    padding-top: 60vh; }
+    main .images .gallery {
+      grid-template-columns: repeat(2, 1fr); } }
+
+@media screen and (max-width: 700px) {
+  /*-----------------------GENERALES---------------------*/
+  .button-burger {
+    font-size: 30px; }
+  .carousel,
+  .slide {
+    height: 350px;
+    width: 350px; }
+  .carousel-caption {
+    padding: 5px; }
+    .carousel-caption h5 {
+      font-weight: 700;
+      font-size: 20px; }
+    .carousel-caption p {
+      font-weight: 500;
+      font-size: 15px; }
+  .clips {
+    width: 450px;
+    height: 350px; }
+  .carousel-item iframe {
+    width: 450px;
+    height: 300px; }
+  /*-----------------------HEADER---------------------*/
+  header h1 .header-title {
+    font-size: 35px; }
+  /*-----------------------MAIN---------------------*/
+  /*---------------INDEX---------------*/
+  main .hero {
+    height: 100vw; }
+    main .hero h2 {
+      margin-top: 8vw;
+      font-size: 7vw; }
+  main .news {
+    width: 500px;
+    height: 450px; }
+  main .about h2 {
+    font-size: 25px; }
+  main .about h3 {
+    font-size: 20px; }
+  main .about p {
+    font-size: 18px; }
+  /*------------------MUSIC----------------*/
+  main .music {
+    padding-top: 65vh; }
+    main .music h2 {
+      font-size: 45px; }
+    main .music .albums {
+      grid-auto-rows: 500px; }
+      main .music .albums div img {
+        width: 400px;
+        height: 400px; }
+  /*--------------VIDEOS-------------*/
+  main .videos {
+    padding-top: 65vh; }
+    main .videos h2 {
+      font-size: 45px; }
+    main .videos .videos-display h3 {
+      font-size: 35px; }
+  /*--------------IMAGES-----------*/
+  main .images {
+    background-size: 950px;
+    padding-top: 65vh; }
+    main .images h2 {
+      font-size: 45px; }
+  /*-----------------------FOOTER----------------------*/
+  footer div div a img {
+    width: 55px;
+    height: 55px;
+    padding: 10px; }
+  footer div div h2 {
+    font-size: 15px; } }
+
+@media screen and (max-width: 550px) {
+  /*-----------------------GENERALES---------------------*/
+  .carousel,
+  .slide {
+    height: 300px;
+    width: 300px; }
+  .carousel-caption h5 {
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 15px; }
+  .carousel-caption p {
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 10px; }
+  .clips {
+    width: 380px;
+    height: 280px; }
+  .carousel-item iframe {
+    width: 380px;
+    height: 250px; }
+  /*-----------------------HEADER---------------------*/
+  header h1 .header-title {
+    font-size: 32px; }
+  /*-----------------------MAIN---------------------*/
+  /*---------------INDEX---------------*/
+  main .hero {
+    height: 110vw; }
+    main .hero h2 {
+      margin-top: 10vw;
+      font-size: 7.5vw; }
+  main .news {
+    width: 450px;
+    height: 400px; }
+    main .news h2 {
+      font-size: 20px; }
+  /*----------------MUSIC--------------*/
+  main .music h2 {
+    font-size: 40px; }
+  main .music .albums {
+    grid-auto-rows: 420px; }
+    main .music .albums div img {
+      width: 330px;
+      height: 330px; }
+    main .music .albums div button a {
+      font-size: 16px; }
+  /*--------------VIDEOS-------------*/
+  main .videos h2 {
+    font-size: 40px; }
+  main .videos .videos-display h3 {
+    font-size: 25px; }
+  /*--------------IMAGES-----------*/
+  main .images {
+    background-size: 800px; }
+    main .images h2 {
+      font-size: 40px; }
+    main .images .gallery {
+      grid-template-columns: repeat(1, 1fr);
+      grid-auto-rows: 450px; }
+      main .images .gallery .img-16 {
+        display: none; }
+      main .images .gallery .img-13 {
+        display: contents; }
+  /*---------------CONTACT-------------*/
+  main .contact div {
+    margin: 40px; }
+  /*-----------------------FOOTER---------------------*/
+  footer div {
+    flex-direction: column; }
+    footer div div {
+      flex-direction: row; }
+      footer div div a img {
+        padding: 5px;
+        height: 40px;
+        width: 40px; } }
+
+@media screen and (max-width: 450px) {
+  /*-----------------------GENERALES---------------------*/
+  .carousel,
+  .slide {
+    height: 300px;
+    width: 300px; }
+  .carousel-caption h5 {
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 15px; }
+  .carousel-caption p {
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 10px; }
+  .clips {
+    width: 320px;
+    height: 220px; }
+  .carousel-item iframe {
+    width: 320px;
+    height: 200px; }
+  /*-----------------------MAIN---------------------*/
+  /*---------------INDEX---------------*/
+  main .hero {
+    height: 120vw; }
+    main .hero h2 {
+      font-size: 9vw;
+      padding: 3vw; }
+  main .news {
+    width: 400px;
+    height: 350px;
+    margin-top: 40px; }
+    main .news h2 {
+      font-size: 15px;
+      margin-bottom: 10px; }
+      main .news h2 h3 {
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 5px; }
+  main .about h2 {
+    font-size: 15px; }
+  main .about h3 {
+    font-size: 14px; }
+  main .about p {
+    padding: 10px; }
+  /*--------------MUSIC------------*/
+  main .music .albums {
+    grid-auto-rows: 380px; }
+    main .music .albums div img {
+      width: 280px;
+      height: 280px; }
+  /*--------------VIDEOS-----------*/
+  main .videos .videos-display h3 {
+    font-size: 20px; }
+  /*-------------IMAGES-----------*/
+  main .images {
+    background-image: url(../img/img-1.jpg);
+    background-position: center;
+    background-size: cover; }
+    main .images h2 {
+      font-size: 30px; }
+    main .images .gallery {
+      grid-auto-rows: 350px; }
+  /*-----------------CONTACT------------*/
+  main .contact div {
+    padding: 30px; }
+    main .contact div h2 {
+      font-size: 20px; }
+    main .contact div a img {
+      width: 40px;
+      height: 40px; }
+    main .contact div form h3 {
+      font-size: 20px; }
+    main .contact div h3 {
+      font-size: 20px; } }
+
+@media screen and (max-width: 400px) {
+  /*-----------------------GENERALES---------------------*/
+  .clips {
+    width: 280px;
+    height: 200px; }
+  .carousel-item iframe {
+    width: 280px;
+    height: 180px; }
+  /*-----------------------MAIN---------------------*/
+  /*---------------INDEX---------------*/
+  main .news {
+    width: 100%; }
+  main .about p {
+    font-size: 12px;
+    padding: 8px; }
+  /*------------MUSIC------------*/
+  main .music .albums {
+    grid-auto-rows: 320px; }
+    main .music .albums div img {
+      width: 230px;
+      height: 230px; }
+  /*--------------VIDEOS-----------*/
+  main .videos .videos-display h3 {
+    font-size: 15px; }
+  /*-------------IMAGES-----------*/
+  main .images .gallery {
+    grid-auto-rows: 280px; } }
+
+@media screen and (max-width: 350px) {
+  /*-----------------------GENERALES---------------------*/
+  .carousel,
+  .slide {
+    height: 280px;
+    width: 280px; }
+  .clips {
+    width: 260px;
+    height: 180px; }
+  .carousel-item iframe {
+    width: 260px;
+    height: 160px; }
+  /*-----------------------MAIN---------------------*/
+  /*------------MUSIC------------*/
+  main .music h2 {
+    font-size: 35px; }
+  main .music .albums {
+    grid-auto-rows: 320px; }
+    main .music .albums div {
+      padding: 10px; }
+      main .music .albums div img {
+        width: 230px;
+        height: 230px; }
+  /*--------------VIDEOS-------------*/
+  main .videos h2 {
+    font-size: 35px; }
+  /*--------------IMAGES-----------*/
+  main .images h2 {
+    padding: 15px;
+    font-size: 28px; }
+  main .images .gallery {
+    grid-auto-rows: 240px; } }

@@ -1,95 +1,111 @@
-// HEADER
+/*---------------------------HEADER----------------------------*/
+
 
 header {
-    background-color: black;
+    background-color: $color-secundario;
     padding: 2vw 2vw 2vw 2vw;
-    border-bottom: 1px solid yellow;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    border-bottom: 1px solid $color-primario;
+    @include flex (flex, space-between, center, row);
+
+
     h1 {
         margin-bottom: 0;
-        a {
-            .header-title {
-                text-decoration: none;
-                color: yellow;
-                font-size: 50px;
-                font-weight: 900;
-                &:hover {
-                    color: white;
-                }
+
+        .header-title {
+            text-decoration: none;
+            color: $color-primario;
+            font-size: 50px;
+            font-weight: 900;
+            transition: color 0.5s;
+
+            &:hover {
+                color: $color-terciario;
             }
         }
     }
-    button {
-    }
+
     div {
-        div {
-            h5 {
 
-            }
-            button {
+        .nav-burger {
+            @include flex (flex, start, start, column);
 
-            }
-        }
-        div {
-            nav {
-                ul {
-                    li {
-                        a {
-
-                        }
-                    }
-                }
-                div {
-                    a {
-
-                    }
-                }
-            }
-        }
-    }
-    nav {
-        .nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             ul {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin-bottom: 0;
-                padding-left: 0;
                 li {
                     padding: 10px;
                     list-style: none;
+
                     a {
                         text-decoration: none;
-                        color: white;
+                        color: $color-terciario;
                         font-size: 30px;
                         font-weight: 900;
+                        transition: color 0.5s;
+
                         &:hover {
-                            color: yellow;
-                        }        
+                            color: $color-primario;
+                        }
                     }
                 }
             }
+
             div {
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
+                padding-left: 30px;
+
                 a {
                     img {
                         width: 50px;
                         height: 50px;
                         padding: 5px;
+                        transition: filter 0.5s;
+
                         &:hover {
-                            filter: 
-                            contrast(40%) 
-                            sepia(1) 
-                            hue-rotate(20deg) 
-                            saturate(1000%)
+                            @extend %icon-filter;
                         }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .nav {
+        @include flex (flex, space-between, center, row);
+
+        ul {
+            @include flex (flex, space-between, center, row);
+            margin-bottom: 0;
+            padding-left: 0;
+
+            li {
+                padding: 10px;
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    color: $color-terciario;
+                    font-size: 30px;
+                    font-weight: 900;
+                    transition: color 0.5s;
+
+                    &:hover {
+                        color: $color-primario;
+                    }
+                }
+            }
+        }
+
+        div {
+            @include flex (flex, space-around, center, row);
+
+            a {
+                img {
+                    width: 50px;
+                    height: 50px;
+                    padding: 5px;
+                    transition: filter 0.5s;
+
+                    &:hover {
+                        @extend %icon-filter;
                     }
                 }
             }

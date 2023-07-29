@@ -1,0 +1,283 @@
+/*---------------------------MAIN----------------------------*/
+
+
+/*------------------INDEX---------------*/
+
+
+main {
+    .hero {
+        height: 80vw;
+        background-image: url(../img/main-1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+
+        h2 {
+            display: inline-block;
+            color: $color-secundario;
+            background-color: $color-primario;
+            padding: 2vw;
+            margin-top: 5vw;
+            margin-bottom: 0;
+            font-weight: 900;
+            font-size: 6vw;
+            @extend %box-shadow;
+        }
+    }
+
+    .main-index {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 80px;
+        background-image: url(../img/main-2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .news {
+        grid-column: 3/6;
+        grid-row: 1/2;
+        margin-top: 50px;
+        padding: 20px;
+        @include flex (flex, center, center, column);
+        text-align: center;
+        background-color: $color-primario;
+        color: $color-secundario;
+        box-shadow: -20px 20px 24px -5px rgba(0, 0, 0, 0.64);
+        -webkit-box-shadow: -20px 20px 24px -5px rgba(0, 0, 0, 0.64);
+        -moz-box-shadow: -20px 20px 24px -5px rgba(0, 0, 0, 0.64);
+
+        h2 {
+            text-decoration: underline;
+            font-weight: 900;
+            margin-bottom: 20px;
+        }
+    }
+
+    .about {
+        grid-column: 1/4;
+        grid-row: 2/3;
+        margin-bottom: 50px;
+        padding: 15px;
+        @include flex (flex, center, center, column);
+        text-align: center;
+        background-color: $color-primario;
+        color: $color-secundario;
+        @extend %box-shadow;
+
+        h2 {
+            text-decoration: underline;
+            font-weight: 900;
+            margin-bottom: 0;
+        }
+
+        h3 {
+            margin-top: 20px;
+            font-weight: 900;
+        }
+
+        p {
+            font-weight: 700;
+            font-size: 20px;
+            padding: 10px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+/*------------------MUSIC---------------*/
+
+
+main {
+    .music {
+        background-image: url(../img/main-4.jpg);
+        @extend %layout-bg;
+
+        h2 {
+            @extend %layout-h2;
+        }
+
+        .albums {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 600px;
+            row-gap: 20px;
+            background-color: $color-fondo-transparente;
+            margin: 20px;
+
+            div {
+                @include flex (flex, center, center, column);
+                background-color: transparent;
+                padding: 40px;
+
+                img {
+                    width: 450px;
+                    height: 450px;
+                    transition: 1s;
+
+                    &:hover {
+                        @extend %img-hover
+                    }
+                }
+
+                button {
+                    a {
+                        text-decoration: none;
+                        color: $color-terciario;
+                        list-style: none;
+                        font-weight: 500;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*------------------VIDEOS---------------*/
+
+
+main {
+    .videos {
+        background-image: url(../img/main-5.jpeg);
+        @extend %layout-bg;
+
+        h2 {
+            @extend %layout-h2;
+        }
+
+        .videos-display {
+            background-color: $color-fondo-transparente;
+            margin: 20px;
+            padding: 40px 0 40px 0;
+
+            h3 {
+                background-color: $color-primario;
+                padding: 2px;
+                font-weight: 700;
+                font-size: 40px;
+                animation: blink-animation 1s steps(5, start) infinite;
+                -webkit-animation: blink-animation 1s steps(5, start) infinite;
+
+                @keyframes blink-animation {
+                    to {
+                        visibility: hidden;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*------------------IMAGES---------------*/
+
+
+main {
+    .images {
+        background-image: url(../img/main-3.jpg);
+        @extend %layout-bg;
+
+
+        h2 {
+            @extend %layout-h2;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 350px;
+            gap: 20px;
+            padding: 30px;
+            background-color: $color-fondo-transparente;
+            margin: 20px;
+
+            div {
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    transition: 1s;
+
+                    &:hover {
+                        @extend %img-hover
+                    }
+                }
+            }
+
+            .img-1 {
+                grid-row: span 2;
+            }
+
+            .img-16 {
+                grid-column: span 2;
+            }
+
+            .img-13 {
+                display: none;
+            }
+        }
+    }
+}
+
+
+/*------------------CONTACT---------------*/
+
+
+main {
+    .contact {
+        background-image: url(../img/main-2.jpg);
+        background-size: cover;
+        background-position: center;
+        @include flex (flex, center, center, column);
+
+        div {
+            background-color: $color-primario;
+            color: $color-secundario;
+            margin: 80px;
+            padding: 50px;
+            border-radius: 20px;
+            @extend %box-shadow;
+
+            h2 {
+                margin-bottom: 10px;
+                text-decoration: underline;
+            }
+
+            form {
+                section {
+                    margin-bottom: 10px;
+                }
+
+                h3 {
+                    font-size: 1.5em;
+                    text-decoration: underline;
+                    margin-top: 30px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            h3 {
+                font-size: 1.5em;
+                text-decoration: underline;
+                margin-top: 30px;
+                margin-bottom: 20px;
+            }
+
+            a {
+                img {
+                    width: 60px;
+                    height: 60px;
+                    margin-right: 5px;
+                    filter: invert(100%);
+                    -webkit-filter: invert(100%);
+                    -moz-filter: invert(100%);
+                }
+            }
+        }
+    }
+}

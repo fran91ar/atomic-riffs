@@ -1,3 +1,58 @@
+//VARIABLES
+
 $color-primario: yellow;
 $color-secundario: black;
-$color-fondo: rgba(255, 255, 255, 0.361);
+$color-terciario: white;
+$color-fondo-transparente: rgba(255, 255, 255, 0.361);
+
+//EXTENDS
+
+%box-shadow {
+    box-shadow: 20px 20px 24px -5px rgba(0, 0, 0, 0.64);
+    -webkit-box-shadow: 20px 20px 24px -5px rgba(0, 0, 0, 0.64);
+    -moz-box-shadow: 20px 20px 24px -5px rgba(0, 0, 0, 0.64);
+}
+
+%layout-bg {
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        padding-top: 56.5vh;
+        padding-bottom: 10px;
+}
+
+%layout-h2 {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: 900;
+    font-size: 50px;
+    color: $color-secundario;
+    background-color: $color-primario;
+    padding: 20px;
+    @extend %box-shadow;
+}
+
+%icon-filter {
+    filter:
+        contrast(40%) 
+        sepia(1) 
+        hue-rotate(20deg) 
+        saturate(1000%);
+}
+
+%img-hover {
+    @extend %box-shadow;
+    transform: scale(1.05);
+    border-radius: 20px;
+}
+
+
+// MIXIN
+
+@mixin flex ($flex, $justify, $align, $direction) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
