@@ -24,14 +24,13 @@ body {
   width: 500px; }
 
 .carousel-caption {
-  background-color: white; }
-  .carousel-caption h5 {
-    color: black;
-    font-weight: 900; }
+  padding: 15px; }
+  .carousel-caption h3 {
+    font-weight: 900;
+    font-size: 20px; }
   .carousel-caption p {
-    color: black;
     font-weight: 700;
-    margin-bottom: 0; }
+    font-size: 18px; }
 
 .clips {
   width: 800px;
@@ -276,8 +275,7 @@ main .videos {
       padding: 2px;
       font-weight: 700;
       font-size: 40px;
-      animation: blink-animation 1s steps(5, start) infinite;
-      -webkit-animation: blink-animation 1s steps(5, start) infinite; }
+      animation: blink-animation 1s steps(5, start) infinite; }
 
 @keyframes blink-animation {
   to {
@@ -427,6 +425,12 @@ footer {
   .slide {
     height: 400px;
     width: 400px; }
+  .carousel-caption {
+    padding: 10px; }
+    .carousel-caption h3 {
+      font-size: 18px; }
+    .carousel-caption p {
+      font-size: 15px; }
   .clips {
     width: 600px;
     height: 500px; }
@@ -478,12 +482,10 @@ footer {
     width: 350px; }
   .carousel-caption {
     padding: 5px; }
-    .carousel-caption h5 {
-      font-weight: 700;
-      font-size: 20px; }
+    .carousel-caption h3 {
+      font-size: 16px; }
     .carousel-caption p {
-      font-weight: 500;
-      font-size: 15px; }
+      font-size: 12px; }
   .clips {
     width: 450px;
     height: 350px; }
@@ -546,13 +548,9 @@ footer {
   .slide {
     height: 300px;
     width: 300px; }
-  .carousel-caption h5 {
-    padding-top: 10px;
-    font-weight: 700;
-    font-size: 15px; }
+  .carousel-caption h3 {
+    font-size: 14px; }
   .carousel-caption p {
-    padding-bottom: 10px;
-    font-weight: 500;
     font-size: 10px; }
   .clips {
     width: 380px;
@@ -621,14 +619,6 @@ footer {
   .slide {
     height: 300px;
     width: 300px; }
-  .carousel-caption h5 {
-    padding-top: 10px;
-    font-weight: 700;
-    font-size: 15px; }
-  .carousel-caption p {
-    padding-bottom: 10px;
-    font-weight: 500;
-    font-size: 10px; }
   .clips {
     width: 320px;
     height: 220px; }

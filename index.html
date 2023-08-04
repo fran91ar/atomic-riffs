@@ -21,7 +21,7 @@
         <div class="offcanvas offcanvas-end text-bg-dark" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
             id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5>
+                <h2 class="offcanvas-title" id="offcanvasScrollingLabel"></h2>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                     aria-label="Close"></button>
             </div>
@@ -65,54 +65,47 @@
         <section class="hero">
             <h2 data-aos="fade-right">ATOMIC RIFFS</h2>
         </section>
-        <div class="main-index">
-            <section class="news" data-aos="fade-up">
+        <section class="main-index">
+            <div class="news" data-aos="fade-up">
                 <h2>LATEST NEWS</h2>
-                <div id="carouselExampleCaptions" class="carousel slide">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </div>
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
+                        <div class="carousel-item active" data-bs-interval="2500">
                             <img src="./img/music-4.jpg" class="d-block w-100" alt="NEW EP">
-                            <div class="carousel-caption d-md-block">
-                                <h5>NEW EP...FUZZ WAR!</h5>
-                                <p>Recorded live on Death Tape Records</p>
+                            <div class="carousel-caption d-md-block bg-white text-black">
+                                <h3 class="m-0">NEW EP - FUZZ WAR!</h3>
+                                <p class="m-0">Recorded live on Death Tape Records</p>
                             </div>
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item" data-bs-interval="2500">
                             <img src="./img/music-5.jpg" class="d-block w-100 .img-fluid" alt="LIVE ON">
-                            <div class="carousel-caption d-md-block">
-                                <h5>LIVE ON GARAGE PARTY VOL. 1</h5>
-                                <p>All the garage you ever want!</p>
+                            <div class="carousel-caption d-md-block bg-white text-black">
+                                <h3 class="m-0">LIVE ON GARAGE PARTY VOL. 1</h3>
+                                <p class="m-0">All the garage you ever want!</p>
                             </div>
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item" data-bs-interval="2500">
                             <img src="./img/music-6.jpg" class="d-block w-100 .img-fluid" alt="NEW ALBUM">
-                            <div class="carousel-caption d-md-block">
-                                <h5>NEW ALBUM COMING SOON...</h5>
-                                <p>Back from the grave</p>
+                            <div class="carousel-caption d-md-block bg-white text-black">
+                                <h3 class="m-0">NEW ALBUM COMING SOON...</h3>
+                                <p class="m-0">Back from the grave</p>
                             </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
                         data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
                         data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
+                    </button>
                 </div>
-            </section>
-            <section class="about" data-aos="fade-up">
+            </div>
+            <div class="about" data-aos="fade-up">
                 <h2>ATOMIC RIFFS BLOWS UP</h2>
                 <h3>"Emerged from the desolation landscape of a massive nuke explosion..."</h3>
                 <p>
@@ -125,8 +118,8 @@
                     It's known by now that this nuked sound it’s generated by some sort of mutant species living between
                     the dirt, the old tube amplifiers and the magnetic death tapes! We call them... ATOMIC RIFFS!!
                 </p>
-            </section>
-        </div>
+            </div>
+        </section>
     </main>
     <footer>
         <nav>
