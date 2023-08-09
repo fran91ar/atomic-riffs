@@ -72,15 +72,15 @@
         <section class="contact">
             <div data-aos="zoom-in">
                 <h2>CONTACT US</h2>
-                <form name="contact" method="POST" data-netlify="true">
+                <form name="contact" method="POST" netlify>
                     <section>
                         <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                        <input name="email" type="email" class="form-control" id="exampleFormControlInput1"
                             placeholder="name@example.com">
                     </section>
                     <section>
                         <label for="exampleFormControlTextarea1" class="form-label">Messenge</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+                        <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
                     </section>
                     <section>
                         <input class="btn btn-dark px-2 me-2 mt-1" type="submit" value="Send">
@@ -90,8 +90,9 @@
                 <form name="newsletter" method="POST" netlify>
                     <h3>SUSCRIBE TO OUR NEWSLETTER:</h3>
                     <section>
-                        <label for="exampleFormControlInput1" class="form-label">Email address<input name="email" type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="name@example.com"/></label>
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input name="email" type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
                     </section>
                     <section>
                         <input class="btn btn-dark mt-1" type="submit" value="Suscribe">
@@ -137,12 +138,12 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <form name="newsletter" method="POST" data-netlify="true">
+                                <form name="newsletter" method="POST" netlify>
                                     <h3>Join our newsletter to recive the latest news and keep update with
                                         Atomic Riffs!</h3>
                                     <section class="pb-3">
                                         <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                                        <input name="email" type="email" class="form-control" id="exampleFormControlInput1"
                                             placeholder="name@example.com">
                                     </section>
                                     <section>
