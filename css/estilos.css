@@ -32,21 +32,6 @@ body {
     font-weight: 700;
     font-size: 18px; }
 
-.clips {
-  width: 800px;
-  height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.carousel-item iframe {
-  width: 800px;
-  height: 500px; }
-
-.button-carousel {
-  bottom: auto;
-  top: auto; }
-
 .form-label {
   margin-bottom: 10px;
   margin-top: 20px;
@@ -266,11 +251,15 @@ main .music {
 /*------------------VIDEOS---------------*/
 main .videos {
   background-image: url(../img/main-5.jpeg); }
-  main .videos .videos-display {
+  main .videos .clips {
     background-color: rgba(255, 255, 255, 0.361);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin: 20px;
     padding: 40px 0 40px 0; }
-    main .videos .videos-display h3 {
+    main .videos .clips h3 {
       background-color: yellow;
       padding: 2px;
       font-weight: 700;
@@ -280,6 +269,9 @@ main .videos {
 @keyframes blink-animation {
   to {
     visibility: hidden; } }
+    main .videos .clips iframe {
+      margin-top: 80px;
+      margin-bottom: 20px; }
 
 /*------------------IMAGES---------------*/
 main .images {
@@ -431,12 +423,6 @@ footer {
       font-size: 18px; }
     .carousel-caption p {
       font-size: 15px; }
-  .clips {
-    width: 600px;
-    height: 500px; }
-  .carousel-item iframe {
-    width: 600px;
-    height: 400px; }
   /*-----------------------HEADER---------------------*/
   header h1 .header-title {
     font-size: 40px; }
@@ -466,6 +452,9 @@ footer {
   /*--------------VIDEOS------------*/
   main .videos {
     padding-top: 60vh; }
+    main .videos .clips iframe {
+      width: 600px;
+      height: 400px; }
   /*--------------IMAGES-----------*/
   main .images {
     padding-top: 60vh; }
@@ -486,12 +475,6 @@ footer {
       font-size: 16px; }
     .carousel-caption p {
       font-size: 12px; }
-  .clips {
-    width: 450px;
-    height: 350px; }
-  .carousel-item iframe {
-    width: 450px;
-    height: 300px; }
   /*-----------------------HEADER---------------------*/
   header h1 .header-title {
     font-size: 35px; }
@@ -526,8 +509,12 @@ footer {
     padding-top: 65vh; }
     main .videos h2 {
       font-size: 45px; }
-    main .videos .videos-display h3 {
+    main .videos .clips h3 {
       font-size: 35px; }
+    main .videos .clips iframe {
+      width: 450px;
+      height: 300px;
+      margin-top: 50px; }
   /*--------------IMAGES-----------*/
   main .images {
     background-size: 950px;
@@ -552,12 +539,6 @@ footer {
     font-size: 14px; }
   .carousel-caption p {
     font-size: 10px; }
-  .clips {
-    width: 380px;
-    height: 280px; }
-  .carousel-item iframe {
-    width: 380px;
-    height: 250px; }
   /*-----------------------HEADER---------------------*/
   header h1 .header-title {
     font-size: 32px; }
@@ -586,8 +567,12 @@ footer {
   /*--------------VIDEOS-------------*/
   main .videos h2 {
     font-size: 40px; }
-  main .videos .videos-display h3 {
+  main .videos .clips h3 {
     font-size: 25px; }
+  main .videos .clips iframe {
+    width: 380px;
+    height: 250px;
+    margin-top: 40px; }
   /*--------------IMAGES-----------*/
   main .images {
     background-size: 800px; }
@@ -619,12 +604,6 @@ footer {
   .slide {
     height: 300px;
     width: 300px; }
-  .clips {
-    width: 320px;
-    height: 220px; }
-  .carousel-item iframe {
-    width: 320px;
-    height: 200px; }
   /*-----------------------MAIN---------------------*/
   /*---------------INDEX---------------*/
   main .hero {
@@ -656,8 +635,13 @@ footer {
       width: 280px;
       height: 280px; }
   /*--------------VIDEOS-----------*/
-  main .videos .videos-display h3 {
+  main .videos .clips h3 {
     font-size: 20px; }
+  main .videos .clips iframe {
+    width: 320px;
+    height: 200px;
+    margin-top: 60px;
+    margin-bottom: 0; }
   /*-------------IMAGES-----------*/
   main .images {
     background-image: url(../img/img-1.jpg);
@@ -681,13 +665,6 @@ footer {
       font-size: 20px; } }
 
 @media screen and (max-width: 400px) {
-  /*-----------------------GENERALES---------------------*/
-  .clips {
-    width: 280px;
-    height: 200px; }
-  .carousel-item iframe {
-    width: 280px;
-    height: 180px; }
   /*-----------------------MAIN---------------------*/
   /*---------------INDEX---------------*/
   main .news {
@@ -702,8 +679,10 @@ footer {
       width: 230px;
       height: 230px; }
   /*--------------VIDEOS-----------*/
-  main .videos .videos-display h3 {
-    font-size: 15px; }
+  main .videos .clips iframe {
+    width: 280px;
+    height: 180px;
+    margin-top: 40px; }
   /*-------------IMAGES-----------*/
   main .images .gallery {
     grid-auto-rows: 280px; } }
@@ -714,12 +693,6 @@ footer {
   .slide {
     height: 280px;
     width: 280px; }
-  .clips {
-    width: 260px;
-    height: 180px; }
-  .carousel-item iframe {
-    width: 260px;
-    height: 160px; }
   /*-----------------------MAIN---------------------*/
   /*------------MUSIC------------*/
   main .music h2 {
@@ -734,6 +707,12 @@ footer {
   /*--------------VIDEOS-------------*/
   main .videos h2 {
     font-size: 35px; }
+  main .videos .clips h3 {
+    font-size: 18px; }
+  main .videos .clips iframe {
+    width: 240px;
+    height: 160px;
+    margin-top: 40px; }
   /*--------------IMAGES-----------*/
   main .images h2 {
     padding: 15px;

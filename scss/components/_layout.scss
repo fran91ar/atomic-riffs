@@ -149,8 +149,9 @@ main {
             @extend %layout-h2;
         }
 
-        .videos-display {
+        .clips {
             background-color: $color-fondo-transparente;
+            @include flex (flex, center, center, column);
             margin: 20px;
             padding: 40px 0 40px 0;
 
@@ -166,6 +167,10 @@ main {
                         visibility: hidden;
                     }
                 }
+            }
+            iframe {
+                margin-top: 80px;
+                margin-bottom: 20px;
             }
         }
     }
