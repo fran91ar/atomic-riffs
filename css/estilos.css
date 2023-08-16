@@ -269,9 +269,24 @@ main .videos {
 @keyframes blink-animation {
   to {
     visibility: hidden; } }
-    main .videos .clips iframe {
-      margin-top: 80px;
-      margin-bottom: 20px; }
+    main .videos .clips h4 {
+      font-weight: 900;
+      font-size: 30px;
+      background-color: black;
+      color: yellow;
+      margin-top: 100px;
+      margin-bottom: 10px;
+      padding: 10px;
+      text-decoration: underline; }
+    main .videos .clips h5 {
+      font-weight: 500;
+      font-size: 20px;
+      color: yellow;
+      padding: 5px;
+      background-color: black;
+      text-align: center;
+      width: 80%;
+      margin-bottom: 30px; }
 
 /*------------------IMAGES---------------*/
 main .images {
@@ -511,10 +526,14 @@ footer {
       font-size: 45px; }
     main .videos .clips h3 {
       font-size: 35px; }
+    main .videos .clips h4 {
+      font-size: 25px; }
+    main .videos .clips h5 {
+      font-size: 18px;
+      margin-bottom: 30px; }
     main .videos .clips iframe {
       width: 450px;
-      height: 300px;
-      margin-top: 50px; }
+      height: 300px; }
   /*--------------IMAGES-----------*/
   main .images {
     background-size: 950px;
@@ -569,10 +588,14 @@ footer {
     font-size: 40px; }
   main .videos .clips h3 {
     font-size: 25px; }
+  main .videos .clips h4 {
+    font-size: 22px; }
+  main .videos .clips h5 {
+    font-size: 16px;
+    margin-bottom: 20px; }
   main .videos .clips iframe {
     width: 380px;
-    height: 250px;
-    margin-top: 40px; }
+    height: 250px; }
   /*--------------IMAGES-----------*/
   main .images {
     background-size: 800px; }
@@ -637,11 +660,14 @@ footer {
   /*--------------VIDEOS-----------*/
   main .videos .clips h3 {
     font-size: 20px; }
+  main .videos .clips h4 {
+    font-size: 18px;
+    padding: 5px; }
+  main .videos .clips h5 {
+    font-size: 14px; }
   main .videos .clips iframe {
     width: 320px;
-    height: 200px;
-    margin-top: 60px;
-    margin-bottom: 0; }
+    height: 200px; }
   /*-------------IMAGES-----------*/
   main .images {
     background-image: url(../img/img-1.jpg);
@@ -681,8 +707,7 @@ footer {
   /*--------------VIDEOS-----------*/
   main .videos .clips iframe {
     width: 280px;
-    height: 180px;
-    margin-top: 40px; }
+    height: 180px; }
   /*-------------IMAGES-----------*/
   main .images .gallery {
     grid-auto-rows: 280px; } }
@@ -709,10 +734,13 @@ footer {
     font-size: 35px; }
   main .videos .clips h3 {
     font-size: 18px; }
+  main .videos .clips h4 {
+    font-size: 15px; }
+  main .videos .clips h5 {
+    font-size: 12px; }
   main .videos .clips iframe {
     width: 240px;
-    height: 160px;
-    margin-top: 40px; }
+    height: 160px; }
   /*--------------IMAGES-----------*/
   main .images h2 {
     padding: 15px;
