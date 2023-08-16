@@ -277,7 +277,8 @@ main .videos {
       margin-top: 100px;
       margin-bottom: 10px;
       padding: 10px;
-      text-decoration: underline; }
+      text-decoration: underline;
+      text-align: center; }
     main .videos .clips h5 {
       font-weight: 500;
       font-size: 20px;
